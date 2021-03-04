@@ -47,6 +47,5 @@ export function decode(deckCode: string): Card[] {
         break;
     }
   }
-
-  return result;
+  return result.sort( (a, b) => a.code.localeCompare(b.code));
 }
